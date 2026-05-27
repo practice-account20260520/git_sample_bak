@@ -78,6 +78,12 @@ git restoreは新しいコマンドであり、より明確な意図を持った
 このように、両者には使用目的において明確な違いがありますので、シーンによって使い分けてください。さらに質問があれば教えてください。
 
 ##git commit --amendの内容
+commitしたものを上書きする
+※pushしたものは上書きしないようにする
+→別の人がpullしたものと状況が相違してしまうから
+add -> commit 
+→間違いが発覚
+新しい変更をadd -> 新しい変更をcommit → このcommitを「git commit --amend」にする
 
 ▼ git push origin masterについて
 自分のブランチがmasterじゃないのでエラーが発生する
